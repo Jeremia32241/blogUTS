@@ -1,0 +1,188 @@
+
+
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.header-container {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+  
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+nav ul li {
+    margin: 0 10px;
+}
+  
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease; 
+}
+  
+nav ul li a:hover {
+    color: #f0f0f0;
+}
+  
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+  
+nav ul li {
+    position: relative;
+}
+  
+nav ul li::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+  
+nav ul li:hover::after {
+    transform: scaleX(1);
+}
+
+.blog-posts {
+    margin: 20px 0;  
+}
+
+.post {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    flex: 1;
+}
+
+.post img {
+    max-width: 100%;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #333;
+    text-decoration: none;
+    border: 2px solid #000; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+}
+
+.date {
+    font-size: 0.8em;
+    color: #777;
+}
+
+.article {
+    flex: 1; 
+    padding: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+}
+
+.article {
+    flex: 3; 
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 1; 
+    padding: 20px;
+    margin-left: 20px; 
+}
+
+.widget {
+    margin-bottom: 20px; 
+}
+
+
+.widget h4 {
+    margin-bottom: 10px; 
+    text-align: center;
+}
+
+.widget ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+    
+
+.widget ul li {
+    margin-bottom: 5px;
+    margin: 0 10px;
+}
+
+.widget ul li i { 
+    font-size: 24px; 
+    margin-bottom: 5px;
+}
+
+.widget h3, .widget span {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+  
+.widget p {
+    font-size: 15px;
+    margin-top: 0;
+    text-align: justify;
+   
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    margin-top: auto;
+}
